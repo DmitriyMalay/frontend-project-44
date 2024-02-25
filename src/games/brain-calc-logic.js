@@ -10,7 +10,7 @@ const brainCalc = () => {
   const num1 = getRandom();
   const num2 = getRandom();
 
-  const question = `${num1}${randomOperator}${num2}`;
+  const question = `${num1} ${randomOperator} ${num2}`;
 
   let result;
 
