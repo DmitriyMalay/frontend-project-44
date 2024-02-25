@@ -10,31 +10,31 @@
 
 The essence of the game is the following: the user is shown a random number. And he should answer 'yes' if the number is even or 'no' if it is odd.
 
-#### [Parity Check asciinema] (https://asciinema.org/a/wxlb0eIMVo9PY4qK7UYKuOoVA)
+#### [Parity Check asciinema] (<https://asciinema.org/a/wxlb0eIMVo9PY4qK7UYKuOoVA>)
 
 ## "Calculator" (brain-calc):
 
 The essence of the game is as follows: the user is shown a random mathematical expression, for example 32 + 18, which you need to calculate and write down the correct answer.
 
-#### [Calculator asciinema] (https://asciinema.org/a/fLmjbXPy3oqN6TcMWJH2Jhlrx)
+#### [Calculator asciinema] (<https://asciinema.org/a/fLmjbXPy3oqN6TcMWJH2Jhlrx>)
 
 ## "Greatest Common Divisor" (brain-gcd):
 
 The essence of the game is as follows: the user is shown two random numbers, for example, 3 9. The user must calculate and enter the greatest common divisor of these numbers.
 
-#### [Greatest Common Divisor asciinema] (https://asciinema.org/a/epETklizFIOp1dJuSIvBSON9b)
+#### [Greatest Common Divisor asciinema] (<https://asciinema.org/a/epETklizFIOp1dJuSIvBSON9b>)
 
 ## "Arithmetic progression" (brain-progression):
 
 The essence of the game is as follows: a player is shown a series of numbers forming an arithmetic progression, in which one number is missing. The player must identify this number.
 
-#### [Arithmetic progression asciinema] (https://asciinema.org/a/8czgldweqzvEVVJMbv4orHhny)
+#### [Arithmetic progression asciinema] (<https://asciinema.org/a/8czgldweqzvEVVJMbv4orHhny>)
 
 ## "Prime Number" (brain-prime):
 
 The essence of the game is as follows: the user is shown a random number, for example, 11. The user must determine whether this number is prime.
 
-#### [Prime Number asciinema] (https://asciinema.org/a/dvGIvd3yMLE4lojiGgYmvdsve)
+#### [Prime Number asciinema] (<https://asciinema.org/a/dvGIvd3yMLE4lojiGgYmvdsve>)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 ### Requirements
 
-To install and run the project, you need [NodeJS](https://nodejs.org/) v8+.
+To install and run the project, you need [NodeJS](https://nodejs.org/en) v8+.
 
 OS: Windows, macOS or Linux.
 
@@ -90,11 +90,3 @@ brain-progression
 # "Prime Number"
 brain-prime
 ```
-
-
-
-
-
-
-
-
