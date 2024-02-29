@@ -10,31 +10,31 @@
 
 The essence of the game is the following: the user is shown a random number. And he should answer 'yes' if the number is even or 'no' if it is odd.
 
-#### [Parity Check asciinema] (<https://asciinema.org/a/wxlb0eIMVo9PY4qK7UYKuOoVA>)
+<a href="https://asciinema.org/a/wxlb0eIMVo9PY4qK7UYKuOoVA" target="_blank"><img src="https://asciinema.org/a/wxlb0eIMVo9PY4qK7UYKuOoVA.svg" /></a>
 
 ## "Calculator" (brain-calc):
 
 The essence of the game is as follows: the user is shown a random mathematical expression, for example 32 + 18, which you need to calculate and write down the correct answer.
 
-#### [Calculator asciinema] (<https://asciinema.org/a/fLmjbXPy3oqN6TcMWJH2Jhlrx>)
+<a href="https://asciinema.org/a/0yLVqGDt8wFn2ZlaGlFBQRv0y" target="_blank"><img src="https://asciinema.org/a/0yLVqGDt8wFn2ZlaGlFBQRv0y.svg" /></a>
 
 ## "Greatest Common Divisor" (brain-gcd):
 
 The essence of the game is as follows: the user is shown two random numbers, for example, 3 9. The user must calculate and enter the greatest common divisor of these numbers.
 
-#### [Greatest Common Divisor asciinema] (<https://asciinema.org/a/epETklizFIOp1dJuSIvBSON9b>)
+<a href="https://asciinema.org/a/FdGBKtCeuChaCR5l3dP7SgjKL" target="_blank"><img src="https://asciinema.org/a/FdGBKtCeuChaCR5l3dP7SgjKL.svg" /></a>
 
 ## "Arithmetic progression" (brain-progression):
 
 The essence of the game is as follows: a player is shown a series of numbers forming an arithmetic progression, in which one number is missing. The player must identify this number.
 
-#### [Arithmetic progression asciinema] (<https://asciinema.org/a/8czgldweqzvEVVJMbv4orHhny>)
+<a href="https://asciinema.org/a/UcOPKd0yg4m2lomsm7IH44NzQ" target="_blank"><img src="https://asciinema.org/a/UcOPKd0yg4m2lomsm7IH44NzQ.svg" /></a>
 
 ## "Prime Number" (brain-prime):
 
 The essence of the game is as follows: the user is shown a random number, for example, 11. The user must determine whether this number is prime.
 
-#### [Prime Number asciinema] (<https://asciinema.org/a/dvGIvd3yMLE4lojiGgYmvdsve>)
+<a href="https://asciinema.org/a/BY23bgLzVqzHdMahY5b6s2kGU" target="_blank"><img src="https://asciinema.org/a/BY23bgLzVqzHdMahY5b6s2kGU.svg" /></a>
 
 ___
 
