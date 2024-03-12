@@ -1,22 +1,31 @@
 #!/usr/bin/env node
 
 import getRandom from '../getrandom.js';
+import runGame from '../index.js';
+
+const findDivisor = (num1, num2) => {
+  let gcd = 1;
+
+  for (let i = 1; i <= num1 && i <= num2; i += 1) {
+    if (num1 % i === 0 && num2 % i === 0) {
+      gcd = i;
+    }
+  }
+  return gcd;
+};
 
 const greatestCommonDivisor = () => {
   const a = getRandom();
   const b = getRandom();
 
-  let gcd = 1;
-
-  for (let i = 1; i <= a && i <= b; i += 1) {
-    if (a % i === 0 && b % i === 0) {
-      gcd = i;
-    }
-  }
-
   const question = `${a} ${b}`;
-  const correctAnswer = String(gcd);
+  const correctAnswer = String(findDivisor(a, b));
   return [question, correctAnswer];
 };
 
-export default greatestCommonDivisor;
+const runGreatestCommonDivisorGame = () => {
+  const rules = 'Find the greatest common divisor of given numbers.';
+  runGame(greatestCommonDivisor, rules);
+};
+
+export default runGreatestCommonDivisorGame;
