@@ -58,10 +58,16 @@ OS: Windows, macOS or Linux.
 git clone git@github.com:DmitriyMalay/frontend-project-44.git
 ```
 
-3. In the directory with the cloned project, enter in the console:
+2. In the directory with the cloned project, enter in the console:
 
 ```
 npm install
+```
+
+3. To globally install a package from a local directory, enter in the console:
+
+```
+npm link
 ```
 
 4. Launch one of the games :

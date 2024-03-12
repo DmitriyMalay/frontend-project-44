@@ -1,29 +1,36 @@
 #!/usr/bin/env node
 
 import getRandom from '../getrandom.js';
+import runGame from '../index.js';
+
+const calculation = (num1, num2, operator) => {
+  switch (operator) {
+    case '+': return num1 + num2;
+    case '-': return num1 - num2;
+    case '*': return num1 * num2;
+    default: return 'Invalid operator';
+  }
+};
+
+const getRandomOperator = () => {
+  const operators = ['+', '-', '*'];
+  return operators[getRandom(0, operators.length - 1)];
+};
 
 const brainCalc = () => {
-  const operations = ['+', '-', '*'];
-  const randomOperators = Math.floor(Math.random() * operations.length);
-  const randomOperator = operations[randomOperators];
-
+  const randomOperator = getRandomOperator();
   const num1 = getRandom();
   const num2 = getRandom();
 
   const question = `${num1} ${randomOperator} ${num2}`;
+  const correctAnswer = String(calculation(num1, num2, randomOperator));
 
-  let result;
-
-  if (randomOperator === '+') {
-    result = num1 + num2;
-  } else if (randomOperator === '-') {
-    result = num1 - num2;
-  } else if (randomOperator === '*') {
-    result = num1 * num2;
-  }
-
-  const correctAnswer = String(result);
   return [question, correctAnswer];
 };
 
-export default brainCalc;
+const runCalcGame = () => {
+  const rules = 'What is the result of the expression?';
+  runGame(brainCalc, rules);
+};
+
+export default runCalcGame;
