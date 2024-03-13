@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import primeNumber from '../src/games/brain-prime-logic.js';
-import runGame from '../src/index.js';
+import runPrimeGame from '../src/games/brain-even-logic.js';
 
-runGame(primeNumber, 'Answer "yes" if given number is prime. Otherwise answer "no".');
+runPrimeGame();

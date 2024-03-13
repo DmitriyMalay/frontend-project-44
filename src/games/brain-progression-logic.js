@@ -1,6 +1,7 @@
 #!/usr/bin/env node
+import runGame from '../index.js';
 
-const arithmeticProgression = () => {
+const progression = () => {
   const arr = [];
   const firstNumber = Math.floor(Math.random() * 50);
   const step = Math.floor(Math.random() * 10);
@@ -13,11 +14,20 @@ const arithmeticProgression = () => {
   const colon = Math.floor(Math.random() * length);
   const newArr = [...arr];
   newArr[colon] = '..';
-
   const question = newArr.join(' ');
   const correctAnswer = String(arr[colon]);
 
   return [question, correctAnswer];
 };
 
-export default arithmeticProgression;
+const arithmeticProgression = () => {
+  const [question, correctAnswer] = progression();
+  return [question, correctAnswer];
+};
+
+const runProgressionGame = () => {
+  const rules = 'What number is missing in the progression?';
+  runGame(arithmeticProgression, rules);
+};
+
+export default runProgressionGame;
