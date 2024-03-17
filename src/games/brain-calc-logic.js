@@ -8,7 +8,7 @@ const calculation = (num1, num2, operator) => {
     case '+': return num1 + num2;
     case '-': return num1 - num2;
     case '*': return num1 * num2;
-    default: return 'Invalid operator';
+    default: throw new Error(`Invalid operator - ${operator}`);
   }
 };
 
@@ -17,7 +17,7 @@ const getRandomOperator = () => {
   return operators[getRandom(0, operators.length - 1)];
 };
 
-const brainCalc = () => {
+const generateRound = () => {
   const randomOperator = getRandomOperator();
   const num1 = getRandom();
   const num2 = getRandom();
@@ -30,7 +30,7 @@ const brainCalc = () => {
 
 const runCalcGame = () => {
   const rules = 'What is the result of the expression?';
-  runGame(brainCalc, rules);
+  runGame(generateRound, rules);
 };
 
 export default runCalcGame;
