@@ -3,18 +3,18 @@
 import getRandom from '../getrandom.js';
 import runGame from '../index.js';
 
-const even = (num) => (num % 2 === 0 ? 'yes' : 'no');
+const isEven = (num) => num % 2 === 0;
 
-const parityCheck = () => {
+const generateRound = () => {
   const question = getRandom();
-  const correctAnswer = String(even(question));
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
 
   return [question, correctAnswer];
 };
 
 const runEvenGame = () => {
   const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-  runGame(parityCheck, rules);
+  runGame(generateRound, rules);
 };
 
 export default runEvenGame;

@@ -14,7 +14,7 @@ const findDivisor = (num1, num2) => {
   return gcd;
 };
 
-const greatestCommonDivisor = () => {
+const generateRound = () => {
   const a = getRandom();
   const b = getRandom();
 
@@ -25,7 +25,7 @@ const greatestCommonDivisor = () => {
 
 const runGreatestCommonDivisorGame = () => {
   const rules = 'Find the greatest common divisor of given numbers.';
-  runGame(greatestCommonDivisor, rules);
+  runGame(generateRound, rules);
 };
 
 export default runGreatestCommonDivisorGame;

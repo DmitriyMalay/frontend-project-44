@@ -15,20 +15,15 @@ const isPrime = (num) => {
   return true;
 };
 
-const sayPrimeOrNot = (num) => {
-  const result = isPrime(num) ? 'yes' : 'no';
-  return result;
-};
-
-const primeNumber = () => {
+const generateRound = () => {
   const question = getRandom();
-  const correctAnswer = sayPrimeOrNot(question);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
 const runPrimeGame = () => {
   const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  runGame(primeNumber, rules);
+  runGame(generateRound, rules);
 };
 
 export default runPrimeGame;

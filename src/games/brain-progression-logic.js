@@ -1,15 +1,20 @@
 #!/usr/bin/env node
 import runGame from '../index.js';
 
+const generateProgression = (start, step, length) => {
+  const progression = [];
+  for (let i = 0; i < length; i += 1) {
+    progression.push(start + step * i);
+  }
+  return progression;
+};
+
 const progression = () => {
-  const arr = [];
-  const firstNumber = Math.floor(Math.random() * 50);
+  const start = Math.floor(Math.random() * 50);
   const step = Math.floor(Math.random() * 10);
   const length = 10;
 
-  for (let i = 0; i < length; i += 1) {
-    arr.push(firstNumber + step * i);
-  }
+  const arr = generateProgression(start, step, length);
 
   const colon = Math.floor(Math.random() * length);
   const newArr = [...arr];
@@ -20,14 +25,14 @@ const progression = () => {
   return [question, correctAnswer];
 };
 
-const arithmeticProgression = () => {
+const generateRound = () => {
   const [question, correctAnswer] = progression();
   return [question, correctAnswer];
 };
 
 const runProgressionGame = () => {
   const rules = 'What number is missing in the progression?';
-  runGame(arithmeticProgression, rules);
+  runGame(generateRound, rules);
 };
 
 export default runProgressionGame;
