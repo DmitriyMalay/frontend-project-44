@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import runGame from '../index.js';
+import getRandom from '../getrandom.js';
 
 const generateProgression = (start, step, length) => {
   const progression = [];
@@ -9,24 +10,22 @@ const generateProgression = (start, step, length) => {
   return progression;
 };
 
-const progression = () => {
+const getProgression = () => {
   const start = Math.floor(Math.random() * 50);
   const step = Math.floor(Math.random() * 10);
   const length = 10;
 
-  const arr = generateProgression(start, step, length);
-
-  const colon = Math.floor(Math.random() * length);
-  const newArr = [...arr];
-  newArr[colon] = '..';
-  const question = newArr.join(' ');
-  const correctAnswer = String(arr[colon]);
+  const progression = generateProgression(start, step, length);
+  const randomIndex = getRandom(0, progression.length - 1);
+  const correctAnswer = String(progression[randomIndex]);
+  progression[randomIndex] = '..';
+  const question = progression.join(' ');
 
   return [question, correctAnswer];
 };
 
 const generateRound = () => {
-  const [question, correctAnswer] = progression();
+  const [question, correctAnswer] = getProgression();
   return [question, correctAnswer];
 };
 
